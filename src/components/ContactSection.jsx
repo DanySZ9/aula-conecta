@@ -3,12 +3,50 @@ import { Mail, Phone, MapPin, Send } from "lucide-react";
 import { SectionEyebrow } from "./AboutSection";
 import Reveal from "./Reveal";
 
+const API_URL = import.meta.env.VITE_API_URL;
+
+const initialForm = {
+  name: "",
+  institution: "",
+  email: "",
+  message: "",
+};
+
 export default function ContactSection() {
   const [sent, setSent] = useState(false);
+  const [formData, setFormData] = useState(initialForm);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
-  function handleSubmit(e) {
+  function handleChange(e) {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  }
+
+  async function handleSubmit(e) {
     e.preventDefault();
-    setSent(true);
+    setIsSubmitting(true);
+
+    try {
+      const response = await fetch(API_URL, {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (!response.ok) {
+        throw new Error("No se pudo guardar el mensaje");
+      }
+
+      setSent(true);
+      setFormData(initialForm);
+    } catch (error) {
+      console.error("Error al enviar formulario:", error);
+      alert("Ocurrió un error al enviar el mensaje. Inténtalo de nuevo.");
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   return (
@@ -58,6 +96,8 @@ export default function ContactSection() {
                   required
                   type="text"
                   name="name"
+                  value={formData.name}
+                  onChange={handleChange}
                   placeholder="Tu nombre"
                   className="w-full rounded-xl border border-line bg-cream px-4 py-3 text-sm text-plum-950 outline-none placeholder:text-plum-900/40 focus-visible:border-gold"
                 />
@@ -66,6 +106,8 @@ export default function ContactSection() {
                 <input
                   type="text"
                   name="institution"
+                  value={formData.institution}
+                  onChange={handleChange}
                   placeholder="Nombre de la institución"
                   className="w-full rounded-xl border border-line bg-cream px-4 py-3 text-sm text-plum-950 outline-none placeholder:text-plum-900/40 focus-visible:border-gold"
                 />
@@ -75,6 +117,8 @@ export default function ContactSection() {
                   required
                   type="email"
                   name="email"
+                  value={formData.email}
+                  onChange={handleChange}
                   placeholder="tu@correo.com"
                   className="w-full rounded-xl border border-line bg-cream px-4 py-3 text-sm text-plum-950 outline-none placeholder:text-plum-900/40 focus-visible:border-gold"
                 />
@@ -84,6 +128,8 @@ export default function ContactSection() {
                   required
                   name="message"
                   rows={4}
+                  value={formData.message}
+                  onChange={handleChange}
                   placeholder="Describe brevemente el reto que enfrenta tu institución"
                   className="w-full resize-none rounded-xl border border-line bg-cream px-4 py-3 text-sm text-plum-950 outline-none placeholder:text-plum-900/40 focus-visible:border-gold"
                 />
@@ -91,9 +137,10 @@ export default function ContactSection() {
 
               <button
                 type="submit"
-                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-plum px-6 py-3.5 text-sm font-semibold text-cream transition-colors hover:bg-plum-600"
+                disabled={isSubmitting}
+                className="mt-2 inline-flex items-center justify-center gap-2 rounded-full bg-plum px-6 py-3.5 text-sm font-semibold text-cream transition-colors hover:bg-plum-600 disabled:cursor-not-allowed disabled:opacity-70"
               >
-                Enviar mensaje
+                {isSubmitting ? "Enviando..." : "Enviar mensaje"}
                 <Send size={16} />
               </button>
             </div>
