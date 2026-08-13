@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+@theme {
+  /* ---- Color tokens, drawn from the CEC marks (deep purple/gold crest + pastel rose/lavender monogram) ---- */
+  --color-ink: #241a33;          /* primary text */
+  --color-plum-950: #241a33;
+  --color-plum-900: #35204f;
+  --color-plum-800: #472a67;
+  --color-plum: #4a2472;         /* brand primary */
+  --color-plum-600: #6b3a96;
+  --color-plum-400: #9569bf;
+
+  --color-gold-700: #9a7226;
+  --color-gold: #c89a3c;         /* brand accent */
+  --color-gold-300: #e4c077;
+  --color-gold-100: #f4e6c4;
+
+  --color-rose: #d9a3aa;         /* pastel accent from monogram */
+  --color-rose-100: #f3dfe1;
+  --color-lavender: #a99cc0;     /* pastel accent from monogram */
+  --color-lavender-100: #e7e2ef;
+
+  --color-cream: #faf6f0;        /* page background */
+  --color-paper: #fffdfa;
+  --color-line: #e7ddce;
+
+  /* ---- Type tokens ---- */
+  --font-display: "Fraunces", "Iowan Old Style", serif;
+  --font-body: "Manrope", "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--color-cream);
+  color: var(--color-ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+::selection {
+  background-color: var(--color-gold-300);
+  color: var(--color-plum-950);
+}
+
+@keyframes hero-rise {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-hero-rise {
+  animation: hero-rise 0.8s cubic-bezier(0.16, 1, 0.3, 1) both;
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+/* Focus visibility kept intentional across the whole site */
+:focus-visible {
+  outline: 2px solid var(--color-gold);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
