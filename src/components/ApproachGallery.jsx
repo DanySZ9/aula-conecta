@@ -5,29 +5,29 @@ import { MeetingIllustration, ClassroomIllustration, ResultsIllustration } from 
 const PANELS = [
   {
     Illustration: MeetingIllustration,
-    title: "Sesiones de diagnóstico",
-    body: "Nos sentamos con directivos y equipos docentes para entender, con datos y contexto, lo que realmente ocurre en la institución.",
+    title: "Antes: planear y observar",
+    body: "Los docentes aplican la rúbrica inicial, identifican necesidades, acuerdan objetivos y preparan las preguntas del tema.",
   },
   {
     Illustration: ClassroomIllustration,
-    title: "Acompañamiento en el aula",
-    body: "Observamos clases, damos seguimiento a la práctica docente y capacitamos con base en lo que vemos, no en supuestos.",
+    title: "Durante: jugar y colaborar",
+    body: "El grupo se organiza en equipos, participa en la partida de Blooket y hace pausas breves para explicar y comentar las respuestas.",
   },
   {
     Illustration: ResultsIllustration,
-    title: "Entrega de resultados",
-    body: "Presentamos indicadores claros y un plan de acción concreto que la institución puede ejecutar y sostener.",
+    title: "Después: reflexionar y ajustar",
+    body: "Se revisan los resultados, se refuerzan los temas difíciles y, al cierre del proyecto, se aplica de nuevo la rúbrica.",
   },
 ];
 
 export default function ApproachGallery() {
   return (
-    <section aria-labelledby="asi-trabajamos-heading" className="bg-cream px-6 py-20 sm:py-28">
+    <section aria-labelledby="asi-se-vive-heading" className="bg-cream px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <SectionEyebrow>Así trabajamos con instituciones</SectionEyebrow>
-          <h2 id="asi-trabajamos-heading" className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-tight text-plum-950 sm:text-4xl">
-            De la sala de juntas al salón de clases.
+          <SectionEyebrow>Así se vive en el aula</SectionEyebrow>
+          <h2 id="asi-se-vive-heading" className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-tight text-plum-950 sm:text-4xl">
+            Del acuerdo entre docentes a <span className="script-accent text-plum-600">la participación del grupo.</span>
           </h2>
         </Reveal>
 

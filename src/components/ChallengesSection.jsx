@@ -1,51 +1,63 @@
-import { GraduationCap, PresentationIcon, CalendarClock, MessageSquareWarning, UserX } from "lucide-react";
+import { Hand, BatteryLow, Users, Shapes, Network } from "lucide-react";
 import { SectionEyebrow } from "./AboutSection";
 import Reveal from "./Reveal";
 
 const ROWS = [
   {
-    icon: GraduationCap,
-    problem: "Bajo rendimiento académico",
+    icon: Hand,
+    problem: "Poca participación en clase",
     solution:
-      "Diagnósticos, planes de apoyo, estrategias de enseñanza y seguimiento de resultados.",
+      "Retos y partidas de Blooket en las que todo el grupo responde, no solo quienes suelen levantar la mano.",
   },
   {
-    icon: PresentationIcon,
-    problem: "Docentes desorganizados o con poco seguimiento",
-    solution: "Planeaciones, observaciones de clase, capacitación e indicadores de desempeño.",
+    icon: BatteryLow,
+    problem: "Desmotivación y desinterés por las actividades",
+    solution:
+      "Juegos educativos, metas cortas y retroalimentación inmediata que dan sentido y reconocimiento al esfuerzo.",
   },
   {
-    icon: CalendarClock,
-    problem: "Mala organización institucional",
-    solution: "Calendarios, cronogramas, manuales y gestión de procesos.",
+    icon: Users,
+    problem: "Dificultad para integrarse y trabajar en equipo",
+    solution:
+      "Equipos heterogéneos con roles rotativos, para que cada estudiante tenga una tarea necesaria para el grupo.",
   },
   {
-    icon: MessageSquareWarning,
-    problem: "Comunicación deficiente",
-    solution: "Protocolos, reuniones y canales formales de comunicación.",
+    icon: Shapes,
+    problem: "Enseñanza que no considera los distintos ritmos y necesidades",
+    solution:
+      "Detección de necesidades, niveles de dificultad graduados y distintas formas de participar.",
   },
   {
-    icon: UserX,
-    problem: "Ausentismo estudiantil y docente",
-    solution: "Registro de asistencia, seguimiento individual y estrategias de prevención.",
+    icon: Network,
+    problem: "Estrategias docentes aisladas y sin seguimiento",
+    solution:
+      "Objetivos comunes, responsabilidades claras y una misma rúbrica para comparar avances.",
   },
 ];
 
 export default function ChallengesSection() {
   return (
-    <section id="soluciones" className="bg-cream px-6 py-20 sm:py-28">
+    <section id="problematica" className="bg-cream px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <SectionEyebrow>Problemas que atendemos</SectionEyebrow>
+          <SectionEyebrow>La problemática</SectionEyebrow>
           <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-tight text-plum-950 sm:text-4xl">
-            Cada problema institucional tiene una solución concreta.
+            Estudiantes que asisten a clase, pero <span className="script-accent text-plum-600">no se sienten parte de ella.</span>
           </h2>
+          <p className="mt-5 max-w-3xl leading-relaxed text-plum-900/80">
+            En algunas instituciones educativas se observa que ciertos
+            estudiantes participan poco, muestran desinterés por las
+            actividades, tienen dificultades para trabajar en equipo o no se
+            sienten suficientemente motivados para aprender. En ocasiones, las
+            estrategias tradicionales de enseñanza no consideran sus diferentes
+            necesidades, ritmos y estilos de aprendizaje.
+          </p>
         </Reveal>
 
         <Reveal delay={100} className="mt-10 overflow-hidden rounded-3xl border border-line bg-paper">
           <div className="hidden grid-cols-[1fr_1fr] gap-6 border-b border-line bg-lavender-100/60 px-8 py-4 text-xs font-semibold uppercase tracking-[0.15em] text-plum-800 sm:grid">
             <span>Problema</span>
-            <span>Solución que aplicamos</span>
+            <span>Estrategia de Aula Conecta</span>
           </div>
 
           <ul>

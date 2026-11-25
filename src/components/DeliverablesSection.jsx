@@ -1,37 +1,37 @@
 import {
-  ClipboardCheck,
-  BarChart3,
   BookOpenCheck,
+  Gamepad2,
+  HeartHandshake,
+  Users,
   CalendarRange,
-  ShieldAlert,
-  LayoutDashboard,
+  ClipboardCheck,
+  ChartColumn,
   Lightbulb,
-  FileText,
 } from "lucide-react";
 import { SectionEyebrow } from "./AboutSection";
 import Reveal from "./Reveal";
 
 const ITEMS = [
-  { icon: ClipboardCheck, label: "Diagnóstico institucional" },
-  { icon: BarChart3, label: "Análisis FODA" },
-  { icon: BookOpenCheck, label: "Plan estratégico y operativo" },
-  { icon: CalendarRange, label: "Cronogramas y diagramas de Gantt" },
-  { icon: ShieldAlert, label: "Matriz de riesgos" },
-  { icon: LayoutDashboard, label: "Indicadores y dashboard de resultados" },
-  { icon: Lightbulb, label: "Propuestas de mejora y planes de acción" },
-  { icon: FileText, label: "Informes de resultados" },
+  { icon: BookOpenCheck, label: "Guía de estrategias de participación" },
+  { icon: Gamepad2, label: "Secuencia para planear sesiones con Blooket" },
+  { icon: HeartHandshake, label: "Orientaciones psicopedagógicas para el aula" },
+  { icon: Users, label: "Dinámicas colaborativas y roles de equipo" },
+  { icon: CalendarRange, label: "Plan de trabajo y responsabilidades docentes" },
+  { icon: ClipboardCheck, label: "Rúbrica de observación inicial y final" },
+  { icon: ChartColumn, label: "Comparación de resultados antes y después" },
+  { icon: Lightbulb, label: "Recomendaciones para dar continuidad" },
 ];
 
 export default function DeliverablesSection() {
   return (
-    <section id="entregables" className="bg-plum-950 px-6 py-20 text-cream sm:py-28">
+    <section id="recursos" className="bg-plum-950 px-6 py-20 text-cream sm:py-28">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <SectionEyebrow>
-            <span className="text-gold-300">¿Qué entregamos?</span>
+            <span className="text-gold-300">Recursos para docentes</span>
           </SectionEyebrow>
           <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-tight sm:text-4xl">
-            Resultados concretos que fortalecen a la institución.
+            Lo que el docente necesita para <span className="script-accent text-gold-300">llevar la propuesta al aula.</span>
           </h2>
         </Reveal>
 

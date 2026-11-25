@@ -7,11 +7,16 @@ export default function Footer() {
         <div className="flex items-center gap-2.5">
           <LogoMark className="h-8 w-8" />
           <span className="font-display text-sm font-semibold text-plum-950">
-            CEC · Consultoría Educativa y de Calidad
+            Aula Conecta · Consultoría Educativa
           </span>
         </div>
-        <p className="text-xs text-plum-900/60">
-          © {new Date().getFullYear()} CEC. Tu aliado estratégico para una educación de calidad.
+        <p className="font-script text-lg font-semibold leading-tight text-plum-600 sm:max-w-xs sm:text-center">
+          Transformando la manera de enseñar para transformar la manera de aprender
+        </p>
+        <p className="max-w-xs text-xs leading-relaxed text-plum-900/60 sm:text-right">
+          © {new Date().getFullYear()} Aula Conecta.
+          <br />
+          Proyecto educativo independiente, sin afiliación con Blooket.
         </p>
       </div>
     </footer>

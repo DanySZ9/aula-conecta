@@ -1,49 +1,44 @@
-import { Search, ClipboardList, Lightbulb, Settings2, TrendingUp } from "lucide-react";
+import { Gamepad2, HeartHandshake, ClipboardList, TrendingUp } from "lucide-react";
 import { SectionEyebrow } from "./AboutSection";
 import Reveal from "./Reveal";
 
 const STEPS = [
   {
-    icon: Search,
-    title: "Diagnosticamos",
-    body: "Analizamos la situación actual de la institución para identificar necesidades y causas reales.",
+    icon: Gamepad2,
+    title: "Aprendizaje dinámico",
+    body: "Incorpora juegos educativos, retos, actividades prácticas y aprendizaje colaborativo, con Blooket como punto de encuentro del grupo.",
+  },
+  {
+    icon: HeartHandshake,
+    title: "Atención psicopedagógica",
+    body: "Identifica las necesidades de aprendizaje y utiliza estrategias que favorecen la participación de todos.",
   },
   {
     icon: ClipboardList,
-    title: "Analizamos",
-    body: "Recopilamos información y utilizamos herramientas estratégicas para comprender el contexto y priorizar acciones.",
-  },
-  {
-    icon: Lightbulb,
-    title: "Diseñamos",
-    body: "Creamos estrategias y soluciones a la medida de cada institución.",
-  },
-  {
-    icon: Settings2,
-    title: "Implementamos",
-    body: "Organizamos las acciones, recursos y tiempos necesarios para llevarlas a cabo.",
+    title: "Organización docente",
+    body: "Establece objetivos, distribuye responsabilidades y coordina las estrategias entre los docentes.",
   },
   {
     icon: TrendingUp,
-    title: "Evaluamos",
-    body: "Medimos los resultados y damos seguimiento para asegurar la mejora continua.",
+    title: "Evaluación continua",
+    body: "Mide los cambios en participación, motivación e integración mediante instrumentos de evaluación.",
   },
 ];
 
 // Vertical offsets that trace the same flowing rhythm as the logo's ribbon.
-const OFFSETS = ["lg:translate-y-0", "lg:translate-y-10", "lg:-translate-y-2", "lg:translate-y-12", "lg:translate-y-2"];
+const OFFSETS = ["lg:translate-y-0", "lg:translate-y-10", "lg:-translate-y-2", "lg:translate-y-12"];
 
 export default function ProcessSection() {
   return (
-    <section id="proceso" className="bg-plum-950 px-6 py-20 text-cream sm:py-28">
+    <section id="componentes" className="bg-plum-950 px-6 py-20 text-cream sm:py-28">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <SectionEyebrow>
-            <span className="text-gold-300">Cómo trabajamos</span>
+            <span className="text-gold-300">Los cuatro componentes</span>
           </SectionEyebrow>
 
           <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-tight sm:text-4xl">
-            Un método en cinco etapas, pensado como un recorrido continuo.
+            Cuatro componentes que <span className="script-accent text-gold-300">se conectan</span> dentro de la misma clase.
           </h2>
         </Reveal>
 
@@ -65,7 +60,7 @@ export default function ProcessSection() {
             />
           </svg>
 
-          <ol className="relative grid gap-6 lg:grid-cols-5">
+          <ol className="relative grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {STEPS.map((step, i) => (
               <Reveal key={step.title} as="li" delay={i * 100} className={`transition-transform duration-300 ${OFFSETS[i]}`}>
                 <div className="h-full rounded-2xl border border-cream/10 bg-plum-900/60 p-6 backdrop-blur-sm">

@@ -1,16 +1,38 @@
-# React + Vite
+# Aula Conecta
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+Estrategias para mejorar la participación estudiantil.
 
-Currently, two official plugins are available:
+Sitio del proyecto Aula Conecta: un modelo de intervención que combina estrategias
+psicopedagógicas, aprendizaje colaborativo y Blooket para mejorar la participación,
+la motivación y la integración de los estudiantes.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Desarrollo
 
-## React Compiler
+```bash
+npm install
+npm run dev
+npm run build
+npm run lint
+```
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Formulario de contacto (MockAPI)
 
-## Expanding the Oxlint configuration
+1. En [mockapi.io](https://mockapi.io) crea un proyecto y un recurso llamado `contacts`.
+2. Define los campos `name`, `institution`, `email`, `message` y `createdAt` (el `id` es automático).
+3. Copia `.env.example` como `.env` y pega la URL del recurso en `VITE_API_URL`.
+4. Reinicia `npm run dev`. Al publicar, define también `VITE_API_URL` en el hosting antes de compilar.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+La URL es visible en el navegador y cualquiera que la tenga puede leer los registros:
+MockAPI sirve para demostraciones, no para guardar datos personales reales.
+
+## Video promocional
+
+Guarda el archivo como `public/video-promocional.mp4` (MP4, H.264). Mientras no exista,
+la sección muestra el aviso "Video disponible próximamente".
+
+## Logo e iconos
+
+- `public/logo.svg`: logo completo, vectorial y con fondo transparente.
+- `public/favicon.svg`: isotipo, usado también en el encabezado y el pie de página.
+- `public/favicon.ico`, `apple-touch-icon.png`, `icon-192.png`, `icon-512.png`: iconos.
+- `public/og-image.png`: imagen para compartir en redes.

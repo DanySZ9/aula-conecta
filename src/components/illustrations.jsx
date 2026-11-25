@@ -3,7 +3,7 @@
 
 export function MeetingIllustration({ className = "" }) {
   return (
-    <svg viewBox="0 0 400 300" className={className} role="img" aria-label="Sesión de diagnóstico institucional">
+    <svg viewBox="0 0 400 300" className={className} role="img" aria-label="Docentes planeando la intervención">
       <rect x="0" y="0" width="400" height="300" rx="20" fill="var(--color-lavender-100)" />
       <ellipse cx="200" cy="235" rx="150" ry="10" fill="var(--color-plum-400)" opacity="0.15" />
 
@@ -38,7 +38,7 @@ export function MeetingIllustration({ className = "" }) {
 
 export function ClassroomIllustration({ className = "" }) {
   return (
-    <svg viewBox="0 0 400 300" className={className} role="img" aria-label="Acompañamiento en el aula">
+    <svg viewBox="0 0 400 300" className={className} role="img" aria-label="Estudiantes participando en clase">
       <rect x="0" y="0" width="400" height="300" rx="20" fill="var(--color-rose-100)" />
 
       {/* board */}
@@ -69,7 +69,7 @@ export function ClassroomIllustration({ className = "" }) {
 
 export function ResultsIllustration({ className = "" }) {
   return (
-    <svg viewBox="0 0 400 300" className={className} role="img" aria-label="Entrega de resultados e indicadores">
+    <svg viewBox="0 0 400 300" className={className} role="img" aria-label="Resultados e indicadores de participación">
       <rect x="0" y="0" width="400" height="300" rx="20" fill="var(--color-gold-100)" />
 
       {/* dashboard card */}
@@ -116,7 +116,7 @@ export function AcademicPattern({ className = "" }) {
     <svg className={className} aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
       <defs>
         <pattern id="academic-motif" width="140" height="140" patternUnits="userSpaceOnUse">
-          <g stroke="var(--color-plum-800)" strokeWidth="1.4" fill="none" opacity="0.5">
+          <g stroke="var(--color-plum-800)" strokeWidth="1.4" fill="none" opacity="0.16">
             <path d="M20 30 L45 18 L70 30 L45 42 Z" />
             <line x1="45" y1="42" x2="45" y2="55" />
             <path d="M95 90c8-8 22-8 30 0" />

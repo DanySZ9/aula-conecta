@@ -2,12 +2,13 @@ import { useEffect, useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
-  { label: "Nosotros", href: "#nosotros" },
-  { label: "Proceso", href: "#proceso" },
-  { label: "Soluciones", href: "#soluciones" },
-  { label: "Herramientas", href: "#herramientas" },
-  { label: "Por qué CEC", href: "#por-que-cec" },
-  { label: "Entregables", href: "#entregables" },
+  { label: "Problemática", href: "#problematica" },
+  { label: "Propuesta", href: "#propuesta" },
+  { label: "Componentes", href: "#componentes" },
+  { label: "Blooket", href: "#blooket" },
+  { label: "Justificación", href: "#justificacion" },
+  { label: "Evaluación", href: "#evaluacion" },
+  { label: "Video", href: "#video" },
   { label: "Contacto", href: "#contacto" },
 ];
 
@@ -31,8 +32,8 @@ export default function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#inicio" className="flex items-center gap-2.5">
           <LogoMark className="h-9 w-9" />
-          <span className="font-display text-lg font-semibold tracking-tight text-plum-950">
-            CEC <span className="hidden text-sm font-medium text-plum-600 sm:inline">Consultoría Educativa y de Calidad</span>
+          <span className="whitespace-nowrap font-display text-lg font-semibold leading-tight tracking-tight text-plum-950">
+            Aula Conecta <span className="hidden text-xs font-medium tracking-normal text-plum-600 sm:block">Consultoría Educativa</span>
           </span>
         </a>
 
@@ -52,7 +53,7 @@ export default function Header() {
           href="#contacto"
           className="hidden rounded-full bg-plum px-5 py-2.5 text-sm font-semibold text-cream transition-colors hover:bg-plum-600 xl:inline-block"
         >
-          Agenda un diagnóstico
+          Contáctanos
         </a>
 
         <button
@@ -84,7 +85,7 @@ export default function Header() {
               onClick={() => setOpen(false)}
               className="mt-3 rounded-full bg-plum px-5 py-3 text-center text-sm font-semibold text-cream"
             >
-              Agenda un diagnóstico
+              Contáctanos
             </a>
           </nav>
         </div>
@@ -94,19 +95,5 @@ export default function Header() {
 }
 
 export function LogoMark({ className = "" }) {
-  return (
-    <svg viewBox="0 0 64 64" className={className} role="img" aria-label="CEC">
-      <circle cx="32" cy="32" r="31" fill="none" stroke="var(--color-lavender)" strokeWidth="1.2" opacity="0.6" />
-      <path
-        d="M12 40c8 5 15 5 20 -3s16 -9 22 -3"
-        stroke="var(--color-gold)"
-        strokeWidth="3"
-        fill="none"
-        strokeLinecap="round"
-      />
-      <circle cx="24" cy="14" r="2.4" fill="var(--color-rose)" />
-      <circle cx="32" cy="12" r="2.4" fill="var(--color-plum-950)" />
-      <circle cx="40" cy="14" r="2.4" fill="var(--color-lavender)" />
-    </svg>
-  );
+  return <img src="/favicon.svg" alt="" className={className} />;
 }

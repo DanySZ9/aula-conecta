@@ -1,36 +1,43 @@
 import {
-  ScanSearch,
-  Grid2x2,
-  RefreshCcw,
-  RotateCcw,
-  Gauge,
-  GanttChartSquare,
-  ShieldAlert,
-  ListChecks,
+  Target,
+  FilePlus2,
+  Gamepad2,
+  QrCode,
+  Users,
+  MessagesSquare,
+  House,
+  ChartColumn,
 } from "lucide-react";
 import { SectionEyebrow } from "./AboutSection";
 import Reveal from "./Reveal";
 
 const TOOLS = [
-  { icon: Grid2x2, name: "FODA", detail: "Fortalezas, Oportunidades, Debilidades y Amenazas." },
-  { icon: ScanSearch, name: "Diagnóstico institucional", detail: "Lectura integral de la institución." },
-  { icon: RefreshCcw, name: "POES", detail: "Planear, Organizar, Ejecutar y Supervisar." },
-  { icon: RotateCcw, name: "PDCA", detail: "Ciclo de mejora continua." },
-  { icon: Gauge, name: "KPIs", detail: "Indicadores de desempeño." },
-  { icon: GanttChartSquare, name: "Diagrama de Gantt", detail: "Planificación de actividades." },
-  { icon: ShieldAlert, name: "Matriz de riesgos", detail: "Anticipación de obstáculos." },
-  { icon: ListChecks, name: "Listas de cotejo", detail: "Formatos de seguimiento." },
+  { icon: Target, name: "Definir el objetivo", detail: "Elegir el tema y lo que el grupo debe lograr en la sesión." },
+  { icon: FilePlus2, name: "Preparar las preguntas", detail: "Crear un conjunto propio o adaptar uno existente, de menor a mayor dificultad." },
+  { icon: Gamepad2, name: "Elegir el modo de juego", detail: "Seleccionar la dinámica según el grupo, el tiempo y el objetivo." },
+  { icon: QrCode, name: "Unirse a la partida", detail: "Los estudiantes entran desde un dispositivo con el código que comparte el docente." },
+  { icon: Users, name: "Jugar en equipo", detail: "Comentar cada respuesta y rotar los roles de lectura, respuesta y explicación." },
+  { icon: MessagesSquare, name: "Conversar los errores", detail: "Pausar para resolver dudas y aprender de las respuestas incorrectas." },
+  { icon: House, name: "Reforzar en casa", detail: "Asignar una actividad para practicar a un ritmo propio." },
+  { icon: ChartColumn, name: "Revisar resultados", detail: "Detectar los temas por reforzar y planear la siguiente sesión." },
 ];
 
 export default function ToolsSection() {
   return (
-    <section id="herramientas" className="bg-plum-950/[0.03] px-6 py-20 sm:py-28">
+    <section id="blooket" className="bg-plum-950/[0.03] px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <SectionEyebrow>Herramientas que utilizamos</SectionEyebrow>
+          <SectionEyebrow>Aprender jugando con Blooket</SectionEyebrow>
           <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-tight text-plum-950 sm:text-4xl">
-            Metodologías probadas, aplicadas con criterio propio.
+            El juego como <span className="script-accent text-plum-600">puerta de entrada</span> a la participación.
           </h2>
+          <p className="mt-5 max-w-3xl leading-relaxed text-plum-900/80">
+            Blooket es una plataforma de juegos educativos en la que el docente
+            prepara preguntas y los estudiantes las responden dentro de
+            distintos modos de juego. En Aula Conecta, cada partida tiene una
+            intención pedagógica: preparar, jugar, conversar y mejorar. Si faltan
+            dispositivos, se comparte uno por equipo.
+          </p>
         </Reveal>
 
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

@@ -2,9 +2,9 @@ import Reveal from "./Reveal";
 import { InstitutionSilhouette } from "./illustrations";
 
 const STATS = [
-  { value: "5", label: "etapas de método" },
-  { value: "8", label: "herramientas estratégicas" },
-  { value: "100%", label: "soluciones a la medida" },
+  { value: "4", label: "componentes" },
+  { value: "3", label: "ejes: participación, motivación e integración" },
+  { value: "2", label: "mediciones: antes y después" },
 ];
 
 export default function ImpactBand() {
@@ -19,12 +19,18 @@ export default function ImpactBand() {
       <div className="relative mx-auto max-w-4xl text-center">
         <Reveal>
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-gold-300">
-            Compromiso institucional
+            Una pregunta para los docentes
           </p>
-          <blockquote className="mt-5 font-display text-2xl font-medium italic leading-snug text-cream sm:text-3xl">
-            "Trabajamos para inspirar soluciones que transforman la educación,
-            institución por institución."
+          <blockquote className="mt-5 font-display text-2xl font-medium leading-snug text-cream sm:text-3xl">
+            “¿Alguna vez han preparado una clase <span className="script-accent text-gold-300">con mucho entusiasmo</span>, pero al
+            llegar al salón se encuentran con estudiantes que no participan, que
+            se distraen o que simplemente no muestran interés?”
           </blockquote>
+          <p className="mx-auto mt-6 max-w-2xl leading-relaxed text-cream/75">
+            No todos los estudiantes aprenden de la misma manera y captar su
+            atención es un reto constante. Aula Conecta busca convertir ese reto
+            en una oportunidad.
+          </p>
         </Reveal>
 
         <Reveal delay={150}>

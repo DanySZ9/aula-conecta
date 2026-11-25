@@ -3,10 +3,10 @@ import Reveal from "./Reveal";
 
 export default function AboutSection() {
   return (
-    <section id="nosotros" className="bg-cream px-6 py-20 sm:py-28">
+    <section id="propuesta" className="bg-cream px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-6xl">
         <Reveal>
-          <SectionEyebrow>Quiénes somos y qué hacemos</SectionEyebrow>
+          <SectionEyebrow>La propuesta</SectionEyebrow>
         </Reveal>
 
         <div className="mt-10 grid gap-6 lg:grid-cols-2">
@@ -16,13 +16,13 @@ export default function AboutSection() {
                 <Users size={22} />
               </IconBadge>
               <h2 className="mt-6 font-display text-2xl font-semibold text-plum-950">
-                ¿Quiénes somos?
+                ¿Qué es Aula Conecta?
               </h2>
               <p className="mt-4 leading-relaxed text-plum-900/80">
-                CEC es una consultoría enfocada en apoyar a instituciones
-                educativas en la identificación de problemas, la mejora de
-                procesos y el diseño de estrategias que generen un mejor
-                desempeño y calidad en la educación.
+                Es un modelo de intervención que permite a los docentes
+                implementar estrategias sencillas para conseguir clases más
+                participativas e inclusivas. Usa Blooket como recurso central
+                para convertir el repaso y la evaluación en retos compartidos.
               </p>
             </article>
           </Reveal>
@@ -33,13 +33,12 @@ export default function AboutSection() {
                 <Lightbulb size={22} />
               </IconBadge>
               <h2 className="mt-6 font-display text-2xl font-semibold text-plum-950">
-                ¿Qué hacemos?
+                Pregunta de investigación
               </h2>
               <p className="mt-4 leading-relaxed text-plum-900/80">
-                Detectamos problemas, analizamos sus causas y diseñamos
-                soluciones estratégicas para fortalecer la organización, el
-                trabajo docente, el aprendizaje de los alumnos y la gestión
-                institucional, generando resultados medibles y sostenibles.
+                ¿Cómo puede la implementación de estrategias psicopedagógicas
+                y colaborativas mejorar la participación y motivación de los
+                estudiantes dentro del aula?
               </p>
             </article>
           </Reveal>
@@ -55,10 +54,11 @@ export default function AboutSection() {
                 Objetivo
               </h2>
               <p className="mt-2 max-w-3xl leading-relaxed text-cream/85">
-                Identificar áreas de oportunidad en las instituciones educativas
-                y desarrollar soluciones estratégicas que mejoren sus procesos,
-                organización y calidad, generando resultados medibles y
-                sostenibles.
+                Mejorar la participación, la motivación y la integración de los
+                estudiantes mediante estrategias psicopedagógicas, dinámicas
+                colaborativas y actividades con Blooket, y valorar los cambios
+                con una rúbrica de observación antes y después de la
+                intervención.
               </p>
             </div>
           </div>
