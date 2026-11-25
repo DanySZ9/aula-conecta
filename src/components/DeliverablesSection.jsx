@@ -24,7 +24,7 @@ const ITEMS = [
 
 export default function DeliverablesSection() {
   return (
-    <section id="recursos" className="bg-plum-950 px-6 py-20 text-cream sm:py-28">
+    <section id="recursos" className="bg-cocoa-950 px-6 py-20 text-cream sm:py-28">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <SectionEyebrow>
@@ -38,7 +38,7 @@ export default function DeliverablesSection() {
         <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {ITEMS.map((item, i) => (
             <Reveal key={item.label} delay={(i % 4) * 90}>
-              <div className="h-full rounded-2xl border border-cream/10 bg-plum-900/50 p-6">
+              <div className="h-full rounded-2xl border border-cream/10 bg-cocoa-900/50 p-6">
                 <item.icon size={22} className="text-gold-300" />
                 <p className="mt-4 text-sm font-medium leading-snug text-cream/90">{item.label}</p>
               </div>

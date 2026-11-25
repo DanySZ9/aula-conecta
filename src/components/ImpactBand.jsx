@@ -9,11 +9,11 @@ const STATS = [
 
 export default function ImpactBand() {
   return (
-    <section className="relative overflow-hidden bg-plum-950 px-6 py-20 text-cream sm:py-24">
+    <section className="relative overflow-hidden bg-cocoa-950 px-6 py-20 text-cream sm:py-24">
       <InstitutionSilhouette className="absolute inset-x-0 bottom-0 h-full w-full" />
       <div
         aria-hidden="true"
-        className="absolute inset-0 bg-gradient-to-t from-plum-950 via-plum-950/95 to-plum-900/70"
+        className="absolute inset-0 bg-gradient-to-t from-cocoa-950 via-cocoa-950/95 to-cocoa-900/70"
       />
 
       <div className="relative mx-auto max-w-4xl text-center">

@@ -10,20 +10,20 @@ export default function VideoSection() {
   const [unavailable, setUnavailable] = useState(false);
 
   return (
-    <section id="video" className="bg-plum-950/[0.03] px-6 py-20 sm:py-28">
+    <section id="video" className="bg-cocoa-950/[0.03] px-6 py-20 sm:py-28">
       <div className="mx-auto max-w-5xl">
         <Reveal>
           <SectionEyebrow>Video promocional</SectionEyebrow>
-          <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-tight text-plum-950 sm:text-4xl">
-            Conoce <span className="script-accent text-plum-600">Aula Conecta</span> en video.
+          <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-tight text-cocoa-950 sm:text-4xl">
+            Conoce <span className="script-accent text-cocoa-600">Aula Conecta</span> en video.
           </h2>
-          <p className="mt-5 max-w-3xl leading-relaxed text-plum-900/80">
+          <p className="mt-5 max-w-3xl leading-relaxed text-cocoa-900/80">
             Descubre cómo una clase puede convertirse en un espacio donde todos
             participan, colaboran y aprenden.
           </p>
         </Reveal>
 
-        <Reveal delay={100} className="mt-10 overflow-hidden rounded-3xl border border-line bg-plum-950 shadow-xl shadow-plum-900/15">
+        <Reveal delay={100} className="mt-10 overflow-hidden rounded-3xl border border-line bg-cocoa-950 shadow-xl shadow-cocoa-900/15">
           {unavailable ? (
             <div className="flex aspect-video flex-col items-center justify-center gap-4 px-6 text-center text-cream">
               <Clapperboard size={40} className="text-gold-300" aria-hidden="true" />

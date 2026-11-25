@@ -1,24 +1,24 @@
 @import "tailwindcss";
 
 @theme {
-  /* ---- Color tokens, drawn from the brand palette (deep purple + gold, with pastel rose/lavender accents) ---- */
-  --color-ink: #241a33;          /* primary text */
-  --color-plum-950: #241a33;
-  --color-plum-900: #35204f;
-  --color-plum-800: #472a67;
-  --color-plum: #4a2472;         /* brand primary */
-  --color-plum-600: #6b3a96;
-  --color-plum-400: #9569bf;
+  /* ---- Color tokens: gold and honey from the Aula Conecta logo, with deep cocoa for text and dark bands ---- */
+  --color-ink: #2a1d0e;          /* primary text */
+  --color-cocoa-950: #2a1d0e;
+  --color-cocoa-900: #3b2a12;
+  --color-cocoa-800: #5b4116;
+  --color-cocoa: #8a5f0e;        /* brand primary: buttons */
+  --color-cocoa-600: #946a12;    /* accent text, AA on cream */
+  --color-cocoa-400: #c99a3a;
 
-  --color-gold-700: #9a7226;
+  --color-gold-700: #876318;
   --color-gold: #c89a3c;         /* brand accent */
   --color-gold-300: #e4c077;
   --color-gold-100: #f4e6c4;
 
-  --color-rose: #d9a3aa;         /* pastel accent from monogram */
-  --color-rose-100: #f3dfe1;
-  --color-lavender: #a99cc0;     /* pastel accent from monogram */
-  --color-lavender-100: #e7e2ef;
+  --color-honey: #b98118;        /* warm accent for icons */
+  --color-honey-100: #f8ecd2;
+  --color-sand: #dcc48e;         /* soft yellow accent */
+  --color-sand-100: #f7efd9;
 
   --color-cream: #faf6f0;        /* page background */
   --color-paper: #fffdfa;
@@ -54,7 +54,7 @@ body {
 
 ::selection {
   background-color: var(--color-gold-300);
-  color: var(--color-plum-950);
+  color: var(--color-cocoa-950);
 }
 
 @keyframes hero-rise {

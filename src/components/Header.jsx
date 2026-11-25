@@ -32,8 +32,8 @@ export default function Header() {
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
         <a href="#inicio" className="flex items-center gap-2.5">
           <LogoMark className="h-9 w-9" />
-          <span className="whitespace-nowrap font-display text-lg font-semibold leading-tight tracking-tight text-plum-950">
-            Aula Conecta <span className="hidden text-xs font-medium tracking-normal text-plum-600 sm:block">Consultoría Educativa</span>
+          <span className="whitespace-nowrap font-display text-lg font-semibold leading-tight tracking-tight text-cocoa-950">
+            Aula Conecta <span className="hidden text-xs font-medium tracking-normal text-cocoa-600 sm:block">Consultoría Educativa</span>
           </span>
         </a>
 
@@ -42,7 +42,7 @@ export default function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="whitespace-nowrap text-sm font-medium text-plum-800 transition-colors hover:text-gold-700"
+              className="whitespace-nowrap text-sm font-medium text-cocoa-800 transition-colors hover:text-gold-700"
             >
               {link.label}
             </a>
@@ -51,7 +51,7 @@ export default function Header() {
 
         <a
           href="#contacto"
-          className="hidden rounded-full bg-plum px-5 py-2.5 text-sm font-semibold text-cream transition-colors hover:bg-plum-600 xl:inline-block"
+          className="hidden rounded-full bg-cocoa px-5 py-2.5 text-sm font-semibold text-cream transition-colors hover:bg-cocoa-600 xl:inline-block"
         >
           Contáctanos
         </a>
@@ -61,7 +61,7 @@ export default function Header() {
           onClick={() => setOpen((v) => !v)}
           aria-expanded={open}
           aria-label={open ? "Cerrar menú" : "Abrir menú"}
-          className="rounded-md p-2 text-plum-950 xl:hidden"
+          className="rounded-md p-2 text-cocoa-950 xl:hidden"
         >
           {open ? <X size={24} /> : <Menu size={24} />}
         </button>
@@ -75,7 +75,7 @@ export default function Header() {
                 key={link.href}
                 href={link.href}
                 onClick={() => setOpen(false)}
-                className="rounded-md px-2 py-3 text-sm font-medium text-plum-800 hover:bg-lavender-100"
+                className="rounded-md px-2 py-3 text-sm font-medium text-cocoa-800 hover:bg-sand-100"
               >
                 {link.label}
               </a>
@@ -83,7 +83,7 @@ export default function Header() {
             <a
               href="#contacto"
               onClick={() => setOpen(false)}
-              className="mt-3 rounded-full bg-plum px-5 py-3 text-center text-sm font-semibold text-cream"
+              className="mt-3 rounded-full bg-cocoa px-5 py-3 text-center text-sm font-semibold text-cream"
             >
               Contáctanos
             </a>

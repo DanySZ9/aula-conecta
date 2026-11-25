@@ -26,8 +26,8 @@ export default function ApproachGallery() {
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <SectionEyebrow>Así se vive en el aula</SectionEyebrow>
-          <h2 id="asi-se-vive-heading" className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-tight text-plum-950 sm:text-4xl">
-            Del acuerdo entre docentes a <span className="script-accent text-plum-600">la participación del grupo.</span>
+          <h2 id="asi-se-vive-heading" className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-tight text-cocoa-950 sm:text-4xl">
+            Del acuerdo entre docentes a <span className="script-accent text-cocoa-600">la participación del grupo.</span>
           </h2>
         </Reveal>
 
@@ -37,8 +37,8 @@ export default function ApproachGallery() {
               <article className="h-full overflow-hidden rounded-3xl border border-line bg-paper">
                 <Illustration className="h-48 w-full" />
                 <div className="p-7">
-                  <h3 className="font-display text-lg font-semibold text-plum-950">{title}</h3>
-                  <p className="mt-2 text-sm leading-relaxed text-plum-900/75">{body}</p>
+                  <h3 className="font-display text-lg font-semibold text-cocoa-950">{title}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-cocoa-900/75">{body}</p>
                 </div>
               </article>
             </Reveal>

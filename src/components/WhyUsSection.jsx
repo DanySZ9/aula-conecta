@@ -32,16 +32,16 @@ export default function WhyUsSection() {
       <div className="mx-auto grid max-w-6xl gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
         <Reveal>
           <SectionEyebrow>Justificación</SectionEyebrow>
-          <h2 className="mt-4 font-display text-3xl font-semibold leading-tight text-plum-950 sm:text-4xl">
-            Participar también es <span className="script-accent text-plum-600">una forma de aprender.</span>
+          <h2 className="mt-4 font-display text-3xl font-semibold leading-tight text-cocoa-950 sm:text-4xl">
+            Participar también es <span className="script-accent text-cocoa-600">una forma de aprender.</span>
           </h2>
-          <p className="mt-5 leading-relaxed text-plum-900/80">
+          <p className="mt-5 leading-relaxed text-cocoa-900/80">
             Aula Conecta surge de la necesidad de fortalecer los procesos de
             enseñanza-aprendizaje mediante estrategias que respondan a las
             necesidades de los estudiantes y que los docentes puedan aplicar de
             forma coordinada.
           </p>
-          <div className="mt-8 hidden items-center gap-4 rounded-2xl bg-plum-950 p-6 text-cream sm:flex">
+          <div className="mt-8 hidden items-center gap-4 rounded-2xl bg-cocoa-950 p-6 text-cream sm:flex">
             <LogoMark className="h-10 w-10 shrink-0" />
             <p className="font-script text-2xl font-semibold leading-snug text-gold-300">
               Transformando la manera de enseñar para transformar la manera de aprender.
@@ -56,10 +56,10 @@ export default function WhyUsSection() {
                 <Check size={16} strokeWidth={3} />
               </span>
               <div>
-                <p className="font-display text-base font-semibold text-plum-950">
+                <p className="font-display text-base font-semibold text-cocoa-950">
                   {reason.title}
                 </p>
-                <p className="mt-0.5 text-sm leading-relaxed text-plum-900/70">{reason.detail}</p>
+                <p className="mt-0.5 text-sm leading-relaxed text-cocoa-900/70">{reason.detail}</p>
               </div>
             </Reveal>
           ))}

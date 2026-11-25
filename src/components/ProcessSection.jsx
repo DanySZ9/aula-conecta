@@ -30,7 +30,7 @@ const OFFSETS = ["lg:translate-y-0", "lg:translate-y-10", "lg:-translate-y-2", "
 
 export default function ProcessSection() {
   return (
-    <section id="componentes" className="bg-plum-950 px-6 py-20 text-cream sm:py-28">
+    <section id="componentes" className="bg-cocoa-950 px-6 py-20 text-cream sm:py-28">
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <SectionEyebrow>
@@ -63,12 +63,12 @@ export default function ProcessSection() {
           <ol className="relative grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
             {STEPS.map((step, i) => (
               <Reveal key={step.title} as="li" delay={i * 100} className={`transition-transform duration-300 ${OFFSETS[i]}`}>
-                <div className="h-full rounded-2xl border border-cream/10 bg-plum-900/60 p-6 backdrop-blur-sm">
+                <div className="h-full rounded-2xl border border-cream/10 bg-cocoa-900/60 p-6 backdrop-blur-sm">
                   <div className="flex items-center justify-between">
                     <span className="font-display text-3xl font-semibold text-gold-300/80">
                       {String(i + 1).padStart(2, "0")}
                     </span>
-                    <step.icon size={22} className="text-rose" />
+                    <step.icon size={22} className="text-honey" />
                   </div>
                   <h3 className="mt-4 font-display text-lg font-semibold text-cream">
                     {step.title}

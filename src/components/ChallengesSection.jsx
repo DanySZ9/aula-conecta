@@ -41,10 +41,10 @@ export default function ChallengesSection() {
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <SectionEyebrow>La problemática</SectionEyebrow>
-          <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-tight text-plum-950 sm:text-4xl">
-            Estudiantes que asisten a clase, pero <span className="script-accent text-plum-600">no se sienten parte de ella.</span>
+          <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-tight text-cocoa-950 sm:text-4xl">
+            Estudiantes que asisten a clase, pero <span className="script-accent text-cocoa-600">no se sienten parte de ella.</span>
           </h2>
-          <p className="mt-5 max-w-3xl leading-relaxed text-plum-900/80">
+          <p className="mt-5 max-w-3xl leading-relaxed text-cocoa-900/80">
             En algunas instituciones educativas se observa que ciertos
             estudiantes participan poco, muestran desinterés por las
             actividades, tienen dificultades para trabajar en equipo o no se
@@ -55,7 +55,7 @@ export default function ChallengesSection() {
         </Reveal>
 
         <Reveal delay={100} className="mt-10 overflow-hidden rounded-3xl border border-line bg-paper">
-          <div className="hidden grid-cols-[1fr_1fr] gap-6 border-b border-line bg-lavender-100/60 px-8 py-4 text-xs font-semibold uppercase tracking-[0.15em] text-plum-800 sm:grid">
+          <div className="hidden grid-cols-[1fr_1fr] gap-6 border-b border-line bg-sand-100/60 px-8 py-4 text-xs font-semibold uppercase tracking-[0.15em] text-cocoa-800 sm:grid">
             <span>Problema</span>
             <span>Estrategia de Aula Conecta</span>
           </div>
@@ -69,12 +69,12 @@ export default function ChallengesSection() {
                 }`}
               >
                 <div className="flex items-start gap-3">
-                  <row.icon size={20} className="mt-0.5 shrink-0 text-rose" />
-                  <p className="font-display text-base font-semibold text-plum-950 sm:text-lg">
+                  <row.icon size={20} className="mt-0.5 shrink-0 text-honey" />
+                  <p className="font-display text-base font-semibold text-cocoa-950 sm:text-lg">
                     {row.problem}
                   </p>
                 </div>
-                <p className="leading-relaxed text-plum-900/75 sm:pl-0">{row.solution}</p>
+                <p className="leading-relaxed text-cocoa-900/75 sm:pl-0">{row.solution}</p>
               </li>
             ))}
           </ul>

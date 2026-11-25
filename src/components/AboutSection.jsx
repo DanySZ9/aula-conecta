@@ -15,10 +15,10 @@ export default function AboutSection() {
               <IconBadge>
                 <Users size={22} />
               </IconBadge>
-              <h2 className="mt-6 font-display text-2xl font-semibold text-plum-950">
+              <h2 className="mt-6 font-display text-2xl font-semibold text-cocoa-950">
                 ¿Qué es Aula Conecta?
               </h2>
-              <p className="mt-4 leading-relaxed text-plum-900/80">
+              <p className="mt-4 leading-relaxed text-cocoa-900/80">
                 Es un modelo de intervención que permite a los docentes
                 implementar estrategias sencillas para conseguir clases más
                 participativas e inclusivas. Usa Blooket como recurso central
@@ -32,10 +32,10 @@ export default function AboutSection() {
               <IconBadge>
                 <Lightbulb size={22} />
               </IconBadge>
-              <h2 className="mt-6 font-display text-2xl font-semibold text-plum-950">
+              <h2 className="mt-6 font-display text-2xl font-semibold text-cocoa-950">
                 Pregunta de investigación
               </h2>
-              <p className="mt-4 leading-relaxed text-plum-900/80">
+              <p className="mt-4 leading-relaxed text-cocoa-900/80">
                 ¿Cómo puede la implementación de estrategias psicopedagógicas
                 y colaborativas mejorar la participación y motivación de los
                 estudiantes dentro del aula?
@@ -45,7 +45,7 @@ export default function AboutSection() {
         </div>
 
         <Reveal delay={200}>
-          <div className="mt-6 flex flex-col gap-6 rounded-3xl bg-plum-950 p-8 text-cream sm:flex-row sm:items-center sm:p-10">
+          <div className="mt-6 flex flex-col gap-6 rounded-3xl bg-cocoa-950 p-8 text-cream sm:flex-row sm:items-center sm:p-10">
             <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-2xl bg-gold-300/15 text-gold-300">
               <Target size={26} />
             </div>
@@ -81,7 +81,7 @@ export function SectionEyebrow({ children }) {
 
 export function IconBadge({ children }) {
   return (
-    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-lavender-100 text-plum-600">
+    <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-sand-100 text-cocoa-600">
       {children}
     </div>
   );

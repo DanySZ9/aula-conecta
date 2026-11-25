@@ -64,10 +64,10 @@ export default function RubricSection() {
       <div className="mx-auto max-w-6xl">
         <Reveal>
           <SectionEyebrow>Instrumento de evaluación</SectionEyebrow>
-          <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-tight text-plum-950 sm:text-4xl">
+          <h2 className="mt-4 max-w-2xl font-display text-3xl font-semibold leading-tight text-cocoa-950 sm:text-4xl">
             Rúbrica de observación de participación estudiantil.
           </h2>
-          <p className="mt-5 max-w-3xl leading-relaxed text-plum-900/80">
+          <p className="mt-5 max-w-3xl leading-relaxed text-cocoa-900/80">
             El docente observa a cada estudiante y asigna de 1 a 4 puntos por
             criterio. La rúbrica se aplica antes y después de implementar el
             proyecto, en condiciones similares, para comparar los resultados.
@@ -81,7 +81,7 @@ export default function RubricSection() {
           className="mt-10 overflow-x-auto rounded-3xl border border-line bg-paper"
         >
           <table className="w-full min-w-[820px] border-collapse text-left text-sm">
-            <thead className="bg-lavender-100/60 text-plum-800">
+            <thead className="bg-sand-100/60 text-cocoa-800">
               <tr>
                 <th scope="col" className="px-5 py-4 font-semibold">Criterio</th>
                 {LEVELS.map((level) => (
@@ -92,11 +92,11 @@ export default function RubricSection() {
             <tbody>
               {CRITERIA.map((criterion) => (
                 <tr key={criterion.name} className="border-t border-line align-top">
-                  <th scope="row" className="px-5 py-5 font-display text-base font-semibold text-plum-950">
+                  <th scope="row" className="px-5 py-5 font-display text-base font-semibold text-cocoa-950">
                     {criterion.name}
                   </th>
                   {criterion.levels.map((text) => (
-                    <td key={text} className="px-5 py-5 leading-relaxed text-plum-900/75">{text}</td>
+                    <td key={text} className="px-5 py-5 leading-relaxed text-cocoa-900/75">{text}</td>
                   ))}
                 </tr>
               ))}
@@ -105,14 +105,14 @@ export default function RubricSection() {
         </div>
 
         <Reveal delay={100}>
-          <h3 className="mt-10 font-display text-lg font-semibold text-plum-950">
+          <h3 className="mt-10 font-display text-lg font-semibold text-cocoa-950">
             Interpretación del puntaje (máximo 20)
           </h3>
           <dl className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
             {SCALE.map((item) => (
               <div key={item.range} className="rounded-2xl border border-line bg-paper p-5">
                 <dt className="font-display text-xl font-semibold text-gold-700">{item.range}</dt>
-                <dd className="mt-1 text-sm text-plum-900/75">{item.label}</dd>
+                <dd className="mt-1 text-sm text-cocoa-900/75">{item.label}</dd>
               </div>
             ))}
           </dl>
